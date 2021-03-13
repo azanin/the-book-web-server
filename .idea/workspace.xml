@@ -14,11 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd243d0f-983f-48b1-b30f-0e9a615d32da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/main.rs" afterDir="false" />
     </list>
+    <list id="dfdef1e6-764e-497c-9da8-41592a813eff" name="-m" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +26,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,6 +64,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/bin" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
@@ -101,12 +113,13 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dd243d0f-983f-48b1-b30f-0e9a615d32da" name="Default Changelist" comment="" />
+      <changelist id="dfdef1e6-764e-497c-9da8-41592a813eff" name="-m" comment="" />
       <created>1615563847669</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615563847669</updated>
       <workItem from="1615563849030" duration="2263000" />
-      <workItem from="1615644377651" duration="3121000" />
+      <workItem from="1615644377651" duration="12154000" />
     </task>
     <servers />
   </component>
@@ -145,5 +158,9 @@
       <screen x="1440" y="-75" width="1920" height="1057" />
     </state>
     <state width="918" height="290" key="GridCell.Tab.0.right/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615647731785" />
+    <state x="1772" y="374" key="VCS.ChangelistChooser" timestamp="1615648193031">
+      <screen x="1440" y="-75" width="1920" height="1057" />
+    </state>
+    <state x="1772" y="374" key="VCS.ChangelistChooser/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615648193031" />
   </component>
 </project>
