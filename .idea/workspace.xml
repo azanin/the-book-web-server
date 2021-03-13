@@ -4,7 +4,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd243d0f-983f-48b1-b30f-0e9a615d32da" name="Default Changelist" comment="" />
+    <list default="true" id="dd243d0f-983f-48b1-b30f-0e9a615d32da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,17 +48,6 @@
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Run the-book-web-server" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package the-book-web-server --bin the-book-web-server" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -79,6 +71,7 @@
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,11 +81,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615563847669</updated>
-      <workItem from="1615563849030" duration="726000" />
+      <workItem from="1615563849030" duration="2263000" />
+      <workItem from="1615644377651" duration="418000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1608" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1615644573953">
+      <screen x="1440" y="-75" width="1920" height="1057" />
+    </state>
+    <state x="1608" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615644573953" />
+    <state width="918" height="290" key="GridCell.Tab.0.bottom" timestamp="1615570248935">
+      <screen x="1440" y="-75" width="1920" height="1057" />
+    </state>
+    <state width="918" height="290" key="GridCell.Tab.0.bottom/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615570248935" />
+    <state width="918" height="290" key="GridCell.Tab.0.center" timestamp="1615570248932">
+      <screen x="1440" y="-75" width="1920" height="1057" />
+    </state>
+    <state width="918" height="290" key="GridCell.Tab.0.center/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615570248932" />
+    <state width="918" height="290" key="GridCell.Tab.0.left" timestamp="1615570248929">
+      <screen x="1440" y="-75" width="1920" height="1057" />
+    </state>
+    <state width="918" height="290" key="GridCell.Tab.0.left/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615570248929" />
+    <state width="918" height="290" key="GridCell.Tab.0.right" timestamp="1615570248933">
+      <screen x="1440" y="-75" width="1920" height="1057" />
+    </state>
+    <state width="918" height="290" key="GridCell.Tab.0.right/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615570248933" />
   </component>
 </project>
