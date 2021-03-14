@@ -14,9 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd243d0f-983f-48b1-b30f-0e9a615d32da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
     </list>
     <list id="dfdef1e6-764e-497c-9da8-41592a813eff" name="-m" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,19 +71,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Run the-book-web-server" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package the-book-web-server --bin the-book-web-server" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -119,7 +106,8 @@
       <option name="presentableId" value="Default" />
       <updated>1615563847669</updated>
       <workItem from="1615563849030" duration="2263000" />
-      <workItem from="1615644377651" duration="12154000" />
+      <workItem from="1615644377651" duration="12349000" />
+      <workItem from="1615741800739" duration="2074000" />
     </task>
     <servers />
   </component>
@@ -136,28 +124,33 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2213" y="176" key="#com.intellij.ide.util.MemberChooser" timestamp="1615742026720">
+      <screen x="1440" y="-75" width="1920" height="1057" />
+    </state>
+    <state x="2213" y="176" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615742026720" />
     <state x="1608" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1615644573953">
       <screen x="1440" y="-75" width="1920" height="1057" />
     </state>
     <state x="1608" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615644573953" />
-    <state width="918" height="290" key="GridCell.Tab.0.bottom" timestamp="1615647731785">
+    <state width="918" height="290" key="GridCell.Tab.0.bottom" timestamp="1615658225778">
       <screen x="1440" y="-75" width="1920" height="1057" />
     </state>
-    <state width="918" height="290" key="GridCell.Tab.0.bottom/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615647731785" />
-    <state width="918" height="290" key="GridCell.Tab.0.center" timestamp="1615647731784">
+    <state width="918" height="290" key="GridCell.Tab.0.bottom/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615658225778" />
+    <state width="918" height="290" key="GridCell.Tab.0.center" timestamp="1615658225777">
       <screen x="1440" y="-75" width="1920" height="1057" />
     </state>
-    <state width="918" height="290" key="GridCell.Tab.0.center/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615647731784" />
-    <state width="918" height="290" key="GridCell.Tab.0.left" timestamp="1615647731783">
+    <state width="918" height="290" key="GridCell.Tab.0.center/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615658225777" />
+    <state width="918" height="290" key="GridCell.Tab.0.left" timestamp="1615658225776">
       <screen x="1440" y="-75" width="1920" height="1057" />
     </state>
-    <state width="918" height="290" key="GridCell.Tab.0.left/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615647731783" />
-    <state width="918" height="290" key="GridCell.Tab.0.right" timestamp="1615647731785">
+    <state width="918" height="290" key="GridCell.Tab.0.left/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615658225776" />
+    <state width="918" height="290" key="GridCell.Tab.0.right" timestamp="1615658225777">
       <screen x="1440" y="-75" width="1920" height="1057" />
     </state>
-    <state width="918" height="290" key="GridCell.Tab.0.right/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615647731785" />
+    <state width="918" height="290" key="GridCell.Tab.0.right/0.23.1440.877/3360.-75.1920.1057/1440.-75.1920.1057@1440.-75.1920.1057" timestamp="1615658225777" />
     <state x="1772" y="374" key="VCS.ChangelistChooser" timestamp="1615648193031">
       <screen x="1440" y="-75" width="1920" height="1057" />
     </state>

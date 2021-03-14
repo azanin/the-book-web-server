@@ -9,13 +9,16 @@ fn main() {
     let tcp_listener = TcpListener::bind("127.0.0.1:7878").unwrap();
     let pool = ThreadPool::new(4);
 
-    for incoming_stream in tcp_listener.incoming() {
+    for incoming_stream in tcp_listener.incoming().take(2) {
         let incoming_stream = incoming_stream.unwrap();
 
         pool.execute(|| {
             handle_connection(incoming_stream);
         });
     }
+
+    println!("Shutting down.");
+
 }
 
 fn handle_connection(mut stream: TcpStream) {

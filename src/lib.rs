@@ -1,5 +1,13 @@
 use std::thread;
 use std::sync::{mpsc, Arc, Mutex};
+use crate::Message::Terminate;
+
+type Job = Box<dyn FnOnce() + Send + 'static>;
+
+enum Message {
+    NewJob(Job),
+    Terminate,
+}
 
 pub struct PoolCreationError {
     message: String
@@ -13,26 +21,33 @@ impl PoolCreationError {
 
 struct Worker {
     id: usize,
-    thread: thread::JoinHandle<()>,
+    thread: Option<thread::JoinHandle<()>>,
 }
 
 impl Worker {
-    fn new(id: usize, receiver: Arc<Mutex<mpsc::Receiver<Job>>>) -> Worker {
+    fn new(id: usize, receiver: Arc<Mutex<mpsc::Receiver<Message>>>) -> Worker {
         let thread = thread::spawn(move || loop {
-            let job = receiver.lock().unwrap().recv().unwrap();
-            println!("Worker {} got a job; executing.", id);
-            job();
+            let message = receiver.lock().unwrap().recv().unwrap();
+
+            match message {
+                Message::NewJob(job) => {
+                    println!("Worker {} got a job; executing.", id);
+                    job();
+                }
+                Message::Terminate => {
+                    println!("Worker {} was told to terminate.", id);
+                    break;
+                }
+            }
         });
 
-        Worker { id, thread }
+        Worker { id, thread: Some(thread) }
     }
 }
 
-type Job = Box<dyn FnOnce() + Send + 'static>;
-
 pub struct ThreadPool {
     workers: Vec<Worker>,
-    sender: mpsc::Sender<Job>
+    sender: mpsc::Sender<Message>,
 }
 
 impl ThreadPool {
@@ -55,17 +70,31 @@ impl ThreadPool {
         ThreadPool { workers, sender }
     }
 
-/*    pub fn new2<'a>(size: usize) -> Result<ThreadPool, PoolCreationError> {
-        if size == 0 { Err(PoolCreationError::new("size can't be 0")) } else {
-            let workers: Vec<Worker> = (0..size).map(|id| Worker::new(id)).collect();
-            Ok(ThreadPool { workers })
-        }
-    }*/
+    /*    pub fn new2<'a>(size: usize) -> Result<ThreadPool, PoolCreationError> {
+            if size == 0 { Err(PoolCreationError::new("size can't be 0")) } else {
+                let workers: Vec<Worker> = (0..size).map(|id| Worker::new(id)).collect();
+                Ok(ThreadPool { workers })
+            }
+        }*/
 
     pub fn execute<F>(&self, f: F)
         where F: FnOnce() + Send + 'static,
     {
         let job = Box::new(f);
-        self.sender.send(job).unwrap();
+        self.sender.send(Message::NewJob(job)).unwrap();
+    }
+}
+
+impl Drop for ThreadPool {
+    fn drop(&mut self) {
+        println!("Sending terminate message to all workers.");
+        self.workers.iter().for_each(|_| self.sender.send(Terminate).unwrap());
+
+        self.workers.iter_mut().for_each(|w| {
+            println!("Shutting down worker {}", w.id);
+            if let Some(t) = w.thread.take() {
+                t.join().unwrap()
+            }
+        })
     }
 }
